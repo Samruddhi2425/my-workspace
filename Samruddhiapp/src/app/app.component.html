@@ -1,0 +1,16 @@
+<app-my message="content projection work here"></app-my>
+
+<label for="sport">select option:</label>
+
+<select name="" id="sport" (change)="changeDrop($event)">
+
+    <option *ngFor="let item of dList" value="{{item}}">{{item}}</option>
+
+</select>
+
+
+<!-- <app-dropdowninput [selectedSport]="selectedSport"></app-dropdowninput> -->
+
+ <app-dropdowninput type={{propValue}}> </app-dropdowninput>
+
+ <!-- <app-dropdowninput type="sport"> </app-dropdowninput> -->

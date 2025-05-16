@@ -1,0 +1,18 @@
+
+
+
+<div >
+   <p> ID               : <input type="text" id="id_id" [(ngModel)]="userlist.id"/></p>
+    <p> Name             : <input type="text" id="id_nme" [(ngModel)]="userlist.name"/></p>
+  <p> IsSeniorCitizen  : <input type="checkbox" id="chk_isSenior" [(ngModel)]="userlist.isSeniorCitizen"/></p>
+    <!-- <p> Gender           : 
+    <ul>
+    <li> Male           : <input type="radio" value="MALE" name="gender"  [(ngModel)]="userlist.gender" /> </li>
+    <li> Female         : <input type="radio" value="FEMALE" name="gender"  [(ngModel)]="userlist.gender" /> </li>
+    </ul>   
+   </p>   -->
+   <p> Continent        :  <input type="text" id="id_conti" [(ngModel)]="userlist.continent" /> </p>
+   <p> City             :  <input type="text" id="id_city" [(ngModel)]="userlist.city" /> </p> 
+   <p><button (click)="nextValue($event)">Next</button></p>
+   <p><button (click)="increment()">{{countr}}</button></p>
+</div>

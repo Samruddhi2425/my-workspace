@@ -1,0 +1,62 @@
+
+
+<table>
+    <tbody>
+        <tr>
+
+            <td>ID</td>
+            <td><input type="text" id="txt_id" [(ngModel)]="singlePeopleData.id"/></td>
+        
+        </tr>
+        <tr>
+
+            <td>Name</td>
+            <td><input type="text" id="txt_nme" [(ngModel)]="singlePeopleData.name" /></td>
+        
+        </tr>
+        <tr><td>
+            IsSeniorCitizen
+        </td>
+        <td>
+            <input type="checkbox" [(ngModel)]="singlePeopleData.isSeniorCitizen" />
+        </td>
+    </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male" [(ngModel)]="singlePeopleData.gender"/>
+                Male
+                <input type="radio" name="gender" value="female" [(ngModel)]="singlePeopleData.gender"/>
+                Female
+            </td>
+        </tr>
+        <tr>
+
+         
+            <td><button (click)="next()">Next</button></td>
+            <td><button (click)="save()">Save</button></td>
+        
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<div>
+    <!--output '$0.26'-->
+    <p>A: {{ a | currency }}</p>
+    <!--output 'CA$0.26'-->
+    <p>A: {{ a | currency: 'INR' }}</p>
+    <!--output 'CAD0.26'-->
+    <p>A: {{ a | currency: 'CAD' : 'code' }}</p>
+    <!--output 'CA$0,001.35'-->
+    <p>B: {{ b | currency: 'CAD' : 'symbol' : '4.2-2' }}</p>
+    <!--output '$0,001.35'-->
+    <p>B: {{ b | currency: 'CAD' : 'symbol-narrow' : '4.2-2' }}</p>
+    <!--output '0 001,35 CA$'-->
+    <!-- <p>B: {{ b | currency: 'CAD' : 'symbol' : '4.2-2' : 'fr' }}</p> -->
+    <!--output 'CLP1' because CLP has no cents-->
+    <p>B: {{ b | currency: 'CLP' }}</p>
+
+    <p>The price is &#8377;500.</p>
+  </div>`

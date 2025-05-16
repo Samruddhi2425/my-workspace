@@ -1,0 +1,19 @@
+.active-button{
+    background-color: blue;
+    color: yellow;
+}
+
+.default-button{
+    background-color: chartreuse;
+    color: blueviolet;
+}
+
+.even-row{
+    color: blueviolet;
+
+}
+
+.odd-row{
+    color: blue;
+
+}

@@ -1,0 +1,56 @@
+<!-- <app-binding></app-binding> -->
+<fieldset>
+    <legend style="font-size: x-large;">Give Information</legend>
+    <table>
+        <tbody>
+            <tr><h1 [ngStyle]="{'color':color ? 'red':'Black','font-size':fsize}">{{title}}</h1></tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" (input)="fromhtmltots($event)" [ngStyle]="{'color':font,'border-color':border}" [(ngModel)]="name"/></td>
+                <h1>{{name}}</h1>
+            </tr>
+            <tr>
+                <td>Is senior citizen</td>
+                <td><input type="checkbox" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="Gender" id="" value="male">male
+                    <input type="radio" name="Gender" id="" value="female">female
+                </td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td><img src="https://picsum.photos/200" alt="image1"></td>
+                <!-- <td><img src="assets/images/book2.jpg" alt="image1"></td> -->
+
+                <!-- https://picsum.photos/200 -->
+            </tr>
+            <tr>
+                <td><app-secondform></app-secondform></td>
+            </tr>
+            <tr><td>
+                <button [ngClass]="{'active-button':toggle,'default-button':!toggle}" (click)='toggleButton()'>Toggle</button>
+            </td></tr>
+            <tr>
+                <td>
+                    <p *ngFor="let para of paragraphlist">{{para}}</p>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <ul>
+                        <li *ngFor="let product of products, let i =index"
+                        [ngClass]="{'even-row':product.id % 2===0,
+                        'odd-row':product.id % 2 !==0}">
+                        {{product.name}} - {{product.price}}
+
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>{{message}}</p>
+</fieldset>
