@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
+import { HomeComponent } from '../../component/home/home.component';
+import { LoginComponent } from '../../component/loginFolder/login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './admin_folder/admin/admin.component';
-import { ManagerComponent } from './manager/manager/manager.component';
-import { UserComponent } from './user/user/user.component';
 import { ForgotPasswardComponent } from './forgot-passward/forgot-passward.component';
+import { ManagerComponent } from '../../component/manager/manager/manager.component';
+import { UserComponent } from '../../component/user/user/user.component';
 
 export const routes: Routes = [
      { path: '', component: LoginComponent},
