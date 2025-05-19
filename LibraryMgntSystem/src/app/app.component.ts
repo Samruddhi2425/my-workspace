@@ -4,9 +4,12 @@ import { LoginComponent } from '../../component/loginFolder/login/login.componen
 import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './admin_folder/admin/admin.component';
-import { UserComponent } from '../../component/user/user/user.component';
-import { ManagerComponent } from '../../component/manager/manager/manager.component';
+
 import { ForgotPasswardComponent } from './forgot-passward/forgot-passward.component';
+import { ManagerComponent } from '../../component/manager/manager/manager.component';
+
+import { UserComponent } from '../../component/user/user/user.component';
+
 
 @Component({
   selector: 'app-root',
