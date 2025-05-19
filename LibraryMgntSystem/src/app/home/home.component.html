@@ -1,94 +1,104 @@
- <div class="container-fluid">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Library MSystem</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inventory</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Book Transaction</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Book Issue</a></li>
-                            <li><a class="dropdown-item" href="#">Book Return</a></li>
-                            <li><a class="dropdown-item" href="#">Remove Book</a></li>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar Section -->
+        <div class="col-md-3">
+            <app-sidebar></app-sidebar>
+        </div>
+
+        
+        <div class="col-md-9">
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">Library MSystem</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inventory</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Book Transaction</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Book Issue</a></li>
+                                    <li><a class="dropdown-item" href="#">Book Return</a></li>
+                                    <li><a class="dropdown-item" href="#">Remove Book</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</div>
 
-<!-- Book Cards Section -->
-<div class="container mt-4">
-    <div class="row" id="bookCardContainer">
-     
-      <div class="col-md-4 mb-4 fade-in">
-    <div class="card shadow h-100">
-        <!-- Book Image -->
-        <img src="https://via.placeholder.com/300x180?text=Book+Cover" class="card-img-top" alt="Book Cover">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
 
-        <div class="card-body">
-            <h5 class="card-title">The Great Gatsby</h5>
-            <h6 class="card-subtitle mb-2 text-muted">by F. Scott Fitzgerald</h6>
-            <p class="card-text">
-                <strong>ISBN:</strong> 9780743273565<br>
-                <strong>Genre:</strong> Fiction<br>
-                <strong>Quantity:</strong> 10
-            </p>
-        </div>
-    </div>
+            
+            <div class="container mt-4">
+                <div class="row" id="bookCardContainer">
+                    
+                    
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card shadow h-100">
+                            <img src="https://via.placeholder.com/300x180?text=Book+Cover" class="card-img-top" alt="Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Gatsby</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">by F. Scott Fitzgerald</h6>
+                                <p class="card-text">
+                                    <strong>ISBN:</strong> 9780743273565<br>
+                                    <strong>Genre:</strong> Fiction<br>
+                                    <strong>Quantity:</strong> 10
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card shadow h-100">
+                            <img src="https://via.placeholder.com/300x180?text=Book+Cover" class="card-img-top" alt="Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Gatsby</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">by F. Scott Fitzgerald</h6>
+                                <p class="card-text">
+                                    <strong>ISBN:</strong> 9780743273565<br>
+                                    <strong>Genre:</strong> Fiction<br>
+                                    <strong>Quantity:</strong> 10
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-4 mb-4 fade-in">
+                        <div class="card shadow h-100">
+                            <img src="https://via.placeholder.com/300x180?text=Book+Cover" class="card-img-top" alt="Book Cover">
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Gatsby</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">by F. Scott Fitzgerald</h6>
+                                <p class="card-text">
+                                    <strong>ISBN:</strong> 9780743273565<br>
+                                    <strong>Genre:</strong> Fiction<br>
+                                    <strong>Quantity:</strong> 10
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+            </div> 
+
+        </div> 
+    </div> 
 </div> 
-<div class="col-md-4 mb-4 fade-in">
-    <div class="card shadow h-100">
-        <!-- Book Image -->
-        <img src="https://via.placeholder.com/300x180?text=Book+Cover" class="card-img-top" alt="Book Cover">
-
-        <div class="card-body">
-            <h5 class="card-title">The Great Gatsby</h5>
-            <h6 class="card-subtitle mb-2 text-muted">by F. Scott Fitzgerald</h6>
-            <p class="card-text">
-                <strong>ISBN:</strong> 9780743273565<br>
-                <strong>Genre:</strong> Fiction<br>
-                <strong>Quantity:</strong> 10
-            </p>
-        </div>
-    </div>
-</div> 
-<div class="col-md-4 mb-4 fade-in">
-    <div class="card shadow h-100">
-        <!-- Book Image -->
-        <img src="https://via.placeholder.com/300x180?text=Book+Cover" class="card-img-top" alt="Book Cover">
-
-        <div class="card-body">
-            <h5 class="card-title">The Great Gatsby</h5>
-            <h6 class="card-subtitle mb-2 text-muted">by F. Scott Fitzgerald</h6>
-            <p class="card-text">
-                <strong>ISBN:</strong> 9780743273565<br>
-                <strong>Genre:</strong> Fiction<br>
-                <strong>Quantity:</strong> 10
-            </p>
-        </div>
-    </div>
-</div> 
-</div>
-</div>
-
-
-
