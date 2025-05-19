@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './admin_folder/admin/admin.component';
 import { ManagerComponent } from './manager/manager/manager.component';
 import { UserComponent } from './user/user/user.component';
+import { ForgotPasswardComponent } from './forgot-passward/forgot-passward.component';
 
 export const routes: Routes = [
      { path: '', component: LoginComponent},
@@ -13,5 +14,6 @@ export const routes: Routes = [
       {path:'register', component:RegisterComponent},
       {path:'admin',component:AdminComponent},
       {path:'manager',component:ManagerComponent},
-      {path:'user',component:UserComponent}
+      {path:'user',component:UserComponent},
+      {path:'forgotpassword',component:ForgotPasswardComponent}
 ];
