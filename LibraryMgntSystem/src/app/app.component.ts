@@ -9,11 +9,12 @@ import { ForgotPasswardComponent } from './forgot-passward/forgot-passward.compo
 import { ManagerComponent } from '../../component/manager/manager/manager.component';
 
 import { UserComponent } from '../../component/user/user/user.component';
+import { NewPasswordComponent } from './new-password/new-password.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [HomeComponent,LoginComponent,RegisterComponent,RouterModule,AdminComponent,ManagerComponent,UserComponent,ForgotPasswardComponent],
+  imports: [HomeComponent,LoginComponent,RegisterComponent,RouterModule,AdminComponent,ManagerComponent,UserComponent,ForgotPasswardComponent,NewPasswordComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

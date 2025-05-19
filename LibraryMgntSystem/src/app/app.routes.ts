@@ -7,6 +7,7 @@ import { ForgotPasswardComponent } from './forgot-passward/forgot-passward.compo
 import { ManagerComponent } from '../../component/manager/manager/manager.component';
 
 import { UserComponent } from '../../component/user/user/user.component';
+import { NewPasswordComponent } from './new-password/new-password.component';
 
 export const routes: Routes = [
      { path: '', component: LoginComponent},
@@ -16,5 +17,6 @@ export const routes: Routes = [
       {path:'admin',component:AdminComponent},
       {path:'manager',component:ManagerComponent},
       {path:'user',component:UserComponent},
-      {path:'forgotpassword',component:ForgotPasswardComponent}
+      {path:'forgotpassword',component:ForgotPasswardComponent},
+      {path:'newpassword',component:NewPasswordComponent}
 ];
